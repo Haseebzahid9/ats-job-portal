@@ -1,0 +1,108 @@
+.authPage {
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: radial-gradient(ellipse 70% 50% at 50% 0%, rgba(77,124,63,0.08) 0%, transparent 60%),
+    var(--bg-primary);
+}
+
+.authCard {
+  width: 100%;
+  max-width: 440px;
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authLogo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #4d7c3f, #6ea84d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0 auto 1.25rem;
+  box-shadow: 0 4px 16px rgba(77, 124, 63, 0.35);
+}
+
+.authTitle {
+  font-size: 1.625rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 0.375rem;
+}
+
+.authSub {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input with icon */
+.inputWrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hasIcon {
+  padding-left: 2.75rem !important;
+}
+
+.hasIconRight {
+  padding-right: 2.75rem !important;
+}
+
+.togglePassword {
+  position: absolute;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s;
+}
+
+.togglePassword:hover {
+  color: var(--text-secondary);
+}
+
+.authSwitch {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.authLink {
+  color: var(--accent-light);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.authLink:hover {
+  color: var(--text-primary);
+}
